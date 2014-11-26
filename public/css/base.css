@@ -1,0 +1,97 @@
+/* Define mobile styles */
+@media only screen 
+{
+  /*Commons.*/
+  body,
+  #ui-datepicker-div,
+  table.dataTable thead th{font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: normal;}
+  
+  table.dataTable,
+  table.dataTable.no-footer,
+  table.dataTable td,
+  table.dataTable thead th{border: 1px solid #D9D9D9 !important;}
+  
+  table.dataTable th{border: 1px solid #fff; font-size: 12px !important; font-weight: normal !important;}
+  
+  .btnAddVisitor{margin-bottom: 0;}
+  
+  .alert-box{display: none;}
+  
+  body,
+  #ui-datepicker-div,
+  input[type='text'],
+  input[type='search'],
+  select,
+  textarea,
+  .button,
+  table.dataTable thead th,
+  table.dataTable tbody td{font-size: 12px;}
+  
+  input[type='text'],
+  textarea{margin-bottom: 5px;}
+  
+  .slogan{font-size: 11px;}
+  .tabs-content > .content.active{width: 100%;}
+  .main{padding-top: 10px; padding-bottom: 30px;}
+  /*BUG:  Solves Foundation JS bug that's related to CSS.*/
+  meta.foundation-data-attribute-namespace {font-family: false;}
+  form{font-size: 12px;}
+  .ui-datepicker-title{font-size: 14px;}
+  .ui-datepicker th{font-size: 12px;}
+  .row .row{margin-left: 0; margin-right: 0;}
+  .avatar{max-width: 350px; height: auto;}
+  table{width: 100%;}
+  .button{padding: 10px;}
+  
+  table.dataTable thead{background-color: #008CBA;}
+  table.dataTable thead th{color: #fff;}
+  /*/Commons.*/
+  
+  /*Auth.*/
+  #auth.login .alert-box{display: block;}
+  /*/Auth.*/
+  
+  /*Visitor.*/
+  #visitor.index .panel.addVisitor{display: none;}
+  #visitor.index .showRecords .timeIn,
+  #visitor.index .showRecords .timeOut
+  {
+    width: 130px; 
+    display: inline;
+  }
+  #visitor.index .showRecords select{max-width: 400px; display: inline;}
+  /*/Visitor.*/
+  
+  /*Register.*/
+  #auth.register select{display: inline; max-width: 400px;}
+  /*/Register.*/
+  
+  /*User.*/
+  #user.update .alert-box{display: block;}
+  #user.update img{width: 200px; height: auto;}
+  /*/User.*/
+}
+
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) 
+{ 
+  /*Commons.*/
+    #map{min-height: 250px;}
+    header .logo{margin-top: 30px;}
+    header nav ul
+    {
+        margin-top: 40px;
+        margin-left: 0;
+    }
+    header nav ul li{margin-bottom: 3px;}
+    /*/Commons.*/
+} 
+
+
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
